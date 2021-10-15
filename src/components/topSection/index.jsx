@@ -61,6 +61,14 @@ const DonateButton = styled.button`
   }
 `;
 
+const MadeBy = styled.h3`
+  color: #fff;
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+`;
+
 export function TopSection() {
   return (
     <TopSectionContainer>
@@ -73,6 +81,9 @@ export function TopSection() {
         warming and will set to fire. Stop polluting, it will cost extra.
       </Paragraph>
       <DonateButton>Donate</DonateButton>
+      <MadeBy>
+        <u>Made By:</u> Islem Maboud
+      </MadeBy>
     </TopSectionContainer>
   );
 }
